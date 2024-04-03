@@ -1,14 +1,14 @@
-const RandomPokmon = ({pokemon}) => {
+import AfficheCart from "./AfficheCart"
+const RandomPokmon = ({pokemons}) => {
 
-    const randomPokemonby = pokemon[Math.round((Math.random() * 9))]
+    const randomPokemonby = pokemons[Math.round((Math.random() * 9))]
 
 
     return (
 
-        <article>
+        <article className="miarticle">
             <h1>Random Pokemon</h1>
-            <h2>{randomPokemonby.name}</h2>
-            <img src={randomPokemonby.image} />
+            <AfficheCart cart = {randomPokemonby}/>
 
         </article>
     )

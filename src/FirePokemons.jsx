@@ -1,29 +1,28 @@
-const FirePokemons = ({ pokemon }) => {
+import AfficheCart from "./AfficheCart"
+const FirePokemons = ({ pokemons }) => {
 
-    const firePokemonby = pokemon.filter((Element) => {
+    const firePokemonby = pokemons.filter((Element) => {
         return Element.type == "Fire"
 
     })
     return (
-
-        <article>
+        <>
             <h1> Fire Pokemon</h1>
-            {
-                firePokemonby.map((elementFire) => {
-                    return (
-                        <div>
-                            <h2>{elementFire.name}</h2>
-                            <img src={elementFire.image} />
-                        </div>
-                    )
-                })
+            <article className="lastarticle">
+                {
+                    firePokemonby.map((pokemonsFire) => {
+                        return (
+                            <AfficheCart cart={pokemonsFire} />
+                        )
+                    })
 
 
 
-            }
+                }
 
 
-        </article>
+            </article>
+        </>
     )
 
 }

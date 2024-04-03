@@ -1,6 +1,8 @@
-const LastCapPokemons = ({ pokemon }) => {
+import AfficheCart from "./AfficheCart"
 
-    let lastpokemonArrey = pokemon.sort((a, b) => {
+const LastCapPokemons = ({ pokemons }) => {
+
+    let lastpokemonArrey = pokemons.sort((a, b) => {
 
         return new Date(a.capturedAt) - new Date(b.capturedAt)
         console.log(lastpokemon)
@@ -11,14 +13,16 @@ const LastCapPokemons = ({ pokemon }) => {
 
 
     return (
-        <article className="lastarticle">
+        <>
             <h1>Last Pokemons capturés</h1>
+
+        <article className="lastarticle">
             {
                 lastpokemon.map((Element) => {
-                    return (<div className="last">
-                        <h2>{Element.name}</h2>
-                        <img src={Element.image} />
-                    </div>
+                    return (
+                         <AfficheCart cart={Element} />
+                    
+                       
                     )
                 })
 
@@ -26,7 +30,7 @@ const LastCapPokemons = ({ pokemon }) => {
 
 
         </article>
-
+        </>
 
 
     )
