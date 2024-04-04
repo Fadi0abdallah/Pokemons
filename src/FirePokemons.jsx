@@ -12,7 +12,7 @@ const FirePokemons = ({ pokemons }) => {
                 {
                     firePokemonby.map((pokemonsFire) => {
                         return (
-                            <AfficheCart cart={pokemonsFire} />
+                            <AfficheCart cart={pokemonsFire}  imgdisplay={true}/>
                         )
                     })
 

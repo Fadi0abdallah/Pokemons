@@ -1,5 +1,6 @@
 import AfficheCart from "./AfficheCart"
-const RandomPokmon = ({pokemons}) => {
+const 
+RandomPokmon = ({pokemons}) => {
 
     const randomPokemonby = pokemons[Math.round((Math.random() * 9))]
 
@@ -8,7 +9,7 @@ const RandomPokmon = ({pokemons}) => {
 
         <article className="miarticle">
             <h1>Random Pokemon</h1>
-            <AfficheCart cart = {randomPokemonby}/>
+            <AfficheCart cart = {randomPokemonby} imgdisplay={true}/>
 
         </article>
     )

@@ -20,7 +20,7 @@ const LastCapPokemons = ({ pokemons }) => {
             {
                 lastpokemon.map((Element) => {
                     return (
-                         <AfficheCart cart={Element} />
+                         <AfficheCart cart={Element}  imgdisplay = {true}/>
                     
                        
                     )

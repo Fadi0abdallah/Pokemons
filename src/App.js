@@ -4,6 +4,7 @@ import Footer from './Footer';
 import LastCapPokemons from './LastCapPokemons';
 import FirePokemons from './FirePokemons';
 import RandomPokmon from './RandomPokemon';
+import ListAllPokemons from './ListAllPokemos';
 
 function App() {
   const pokemonsData = [
@@ -85,6 +86,7 @@ function App() {
    <LastCapPokemons  pokemons = {pokemonsData}/>
    <RandomPokmon   pokemons = {pokemonsData}/>
    <FirePokemons   pokemons = {pokemonsData}/>
+   <ListAllPokemons pokemons={pokemonsData}/>
    <Footer />
    
    </>

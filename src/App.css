@@ -1,12 +1,16 @@
 header {
   background-color: #337cff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 150px;
   align-items: center;
 
 }
 
+.logo{
+width: 50vw;
+height: 100%;
+}
 img {
   width: 100px;
   height: 100px;
@@ -30,6 +34,8 @@ h1 {
 
 .lastarticle {
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .last {
@@ -40,6 +46,10 @@ h1 {
   width: 40vw;
   margin: 10px;
   flex-direction: column
+}
+.last:hover{
+  box-shadow: #b4e601 2px 2px;
+  transform:translate(2deg) ;
 }
 
 h2 {

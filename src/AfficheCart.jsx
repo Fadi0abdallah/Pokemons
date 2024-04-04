@@ -1,8 +1,10 @@
-const AfficheCart = ({cart}) => {
+const AfficheCart = ({ cart , imgdisplay }) => {
+ 
     return (
         <div className="last">
             <h2>{cart.name}</h2>
-            <img src={cart.image} />
+          {  imgdisplay && <img src={cart.image} />} 
+            <h3> Type :{cart.type}</h3>
         </div>
     )
 
